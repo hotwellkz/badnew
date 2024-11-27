@@ -1,0 +1,63 @@
+```css
+/* Адаптивные стили */
+@media (max-width: 640px) {
+  .client-card {
+    @apply flex-col;
+  }
+  
+  .client-info {
+    @apply w-full;
+  }
+  
+  .payment-progress {
+    @apply mt-4 w-full;
+  }
+  
+  .action-buttons {
+    @apply mt-4 flex-row justify-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-5 {
+    @apply grid-cols-2;
+  }
+  
+  .payment-stages {
+    @apply gap-2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .client-filters {
+    @apply flex-col gap-2;
+  }
+  
+  .search-bar {
+    @apply w-full;
+  }
+}
+
+/* Анимации */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms, transform 300ms;
+}
+```

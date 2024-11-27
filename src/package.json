@@ -1,0 +1,8 @@
+```json
+{
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.0.0",
+    "react-hot-toast": "^2.4.1"
+  }
+}
+```
